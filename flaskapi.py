@@ -1,3 +1,5 @@
+import subprocess
+subprocess.run(["pip","install","-r","requirements.txt"],check=True)
 from flask import Flask, request, jsonify
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
